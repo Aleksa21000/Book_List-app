@@ -1,0 +1,95 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family:'Franklin Gothic', 'Arial Narrow', Arial, sans-serif;
+}
+
+.main-container{
+  max-width: 70vw;
+  height: 90vh;
+  margin: 1rem auto;
+}
+
+.main-container > h1{
+  font-size: clamp(2.5rem, 3vw , 4rem);
+  font-weight: 400;
+}
+
+.input-container{
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 0;
+}
+
+.input-container > label{
+  font-size: clamp(1.2rem, 1.5vw, 3rem);
+}
+
+.input-container > input{
+  padding: 0.8rem 0.5rem;
+  margin-top: 0.5rem;
+  border: 1px solid rgb(175, 175, 175);
+  border-radius: 5px;
+  outline: none;
+}
+
+.btn{
+  padding: 0.7rem 2rem;
+  margin: 1rem 0 2rem 0;
+  font-size: 1rem;
+  border: 1px solid rgb(175, 175, 175);
+  border-radius: 5px;
+  background: inherit;
+  cursor: pointer;
+  transition: 0.5s ease-out;
+}
+
+.btn:hover{
+  background:rgb(175, 175, 175);
+}
+
+.main-container > table{
+  width: 100%;  
+  margin: 1rem 0;
+}
+
+.main-container > table > thead > tr > th{
+  text-align: start;
+}
+
+/* List element */
+.list-element{
+  height: 2rem;
+}
+
+/* Delete-item */
+.delete-item{
+  text-decoration: none;
+  color: #F84F31;
+  transition: .5s ease-in-out;
+}
+
+.delete-item:hover{
+  color: #333;
+}
+
+/* Alerts */
+.alert{
+  padding: 1rem;
+  margin: 0.5rem 0;
+  text-align: start;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.success{
+  background-color: #23C552;
+}
+
+.fail{
+  background-color: #F84F31;
+}
